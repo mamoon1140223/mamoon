@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamoon</title>
+    <link href="images/favicon.png" rel="icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preload" as="image" href="images/hero-bg.jpg"/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- 引入 Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=DynaPuff:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 動態導航菜單 -->
+    <div class="dynamic-nav" id="dynamicNav">
+        <div class="nav-toggle" id="navToggle">
+            <span class="menu-text">MENU</span>
+        </div>
+        <div class="nav-expanded">
+            <ul class="nav-menu">
+                <li><a href="#immersive">關於專案</a></li>
+                <li><a href="#features">特色功能</a></li>
+                <li><a href="#team">團隊介紹</a></li>
+                <li><a href="#contact">團隊日常</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+        </div>
+    </section>
+
+    <!-- 沉浸式對話體驗區 -->
+    <section id="immersive" class="immersive-chat-new">
+        <div class="chat-wrapper">
+            <h2 class="immersive-title">那些話...</h2>
+            <div class="chat-display" id="chatDisplay">
+                <!-- 對話會動態插入這裡 -->
+            </div>
+            <button class="chat-next-btn" id="chatNextBtn">聽聽媽媽怎麼說</button>
+            <p class="chat-ending" id="chatEnding">當你想說話的時候，希望世界能停下來聽你說。</p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+  /* 圖片大小調整 */
+  .about-img {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* 自訂箭頭位置 */
+  .carousel-control-prev, .carousel-control-next {
+    width: 5%;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: none; /* 隱藏 Bootstrap 預設箭頭 */
+  }
+
+  /* Instagram 嵌入高度調整 */
+  .instagram-embed-wrapper {
+    max-height: 500px; /* 設定您希望的最大高度 */
+    overflow-y: auto; /* 內容超出時顯示捲軸 */
+  }
+</style>
+
+<!-- 關於專案 - 新設計 -->
+<section id="about" class="about-new">
+    <!-- 左上標籤 -->
+    <div class="floating-tag tag-top">#AI對話</div>
+    
+    <!-- 標題區 -->
+    <div class="about-header">
+        <div class="title-area">
+            <span class="star-icon">✨</span>
+            <h2>關於專案</h2>
+            <span class="star-icon">✨</span>
+        </div>
+        <p class="about-description">
+            「Mamoon」是一個有情感、有靈魂的數位媽媽與朋友，如月亮般溫柔守護，如媽媽般細膩陪伴。
+        </p>
+    </div>
+    
+    <!-- 左側標籤 -->
+    <div class="floating-tag tag-left-top">#音樂功能</div>
+    <div class="floating-tag tag-left-bottom">#兒童語言發展</div>
+    
+    <!-- 右側標籤 -->
+    <div class="floating-tag tag-right-top">#故事功能</div>
+    <div class="floating-tag tag-right-mid">#虛實整合</div>
+    <div class="floating-tag tag-right-bottom">#智能陪伴</div>
+    
+    <!-- 圖片展示 -->
+    <div class="phone-carousel">
+        <div class="phone-display">
+            <div class="project-image-frame">
+                <img src="images/webp/project.png" alt="關於專案">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 訪談專欄 -->
+<section id="interview" class="interview-section">
+    <div class="interview-container">
+        <div class="interview-header">
+            <div class="title-area">
+                <span class="star-icon">📝</span>
+                <h2>訪談專欄</h2>
+                <span class="star-icon">📝</span>
+            </div>
+        </div>
+        
+        <div class="interview-content">
+            <div class="interview-card">
+                <div class="interview-image">
+                    <img src="images/IMG_1236.JPG" alt="訪談照片">
+                </div>
+                <div class="interview-text">
+                    <h3>蔡藍怡老師</h3>
+                    <p class="interview-subtitle">新北市平溪區菁桐國小附設幼兒園</p>
+                    
+                    <div class="interview-highlights">
+                        <h4>✨ 重點摘要</h4>
+                        <ul>
+                            <li>產品可促進語言較遲緩兒童的互動與學習</li>
+                            <li>家長和老師希望聲音辨識清楚、操作簡單的有聲產品</li>
+                            <li>語音互動娃娃在幼兒園和家庭中促進語言學習</li>
+                            <li>AI工具在特殊教育中有潛力，但難以取代人類情感</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 數據分析 -->
+<section id="survey" class="survey-section">
+    <div class="survey-container">
+        <div class="section-header">
+            <div class="title-area">
+                <h2>問卷調查</h2>
+            </div>
+        </div>
+        
+        <div class="survey-charts">
+            <div class="chart-item chart-top">
+                <img src="images/chart2.png" alt="男女比例">
+            </div>
+            <div class="survey-charts-row">
+                <div class="chart-item">
+                    <img src="images/chart.png" alt="使用意願調查">
+                </div>
+                <div class="chart-item">
+                    <img src="images/chart1.png" alt="功能需求調查">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <div class="title-area">
+                    <h2>特色功能</h2>
+                </div>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card" data-feature="chat">
+                   <div class="icon">
+                    
+    <i class="far fa-comments" style="font-size:36px"></i>
+</div>
+                    <h3>對話功能</h3>
+                    <p>AI智能對話功能，滿足小孩對話的需求。</p>
+                    
+                    <!-- 懸停顯示的圖片 -->
+                    <div class="feature-preview">
+                        <img src="images/1.png" alt="" loading="lazy">
+                    </div>
+                </div>
+                <div class="feature-card" data-feature="story">
+                    <div class="icon"><i class='fas fa-play-circle' style='font-size:36px'></i></div>
+                    <h3>故事功能</h3>
+                    <p>多樣化的故事，讓小孩有更多樣性的選擇。</p>
+                    
+                    <!-- 懸停顯示的圖片 -->
+                    <div class="feature-preview">
+                        <img src="images/2.png" alt="故事功能界面" loading="lazy">
+                    </div>
+                </div>
+                <div class="feature-card" data-feature="music">
+                    <div class="icon"><i class='fas fa-headphones-alt' style='font-size:36px'></i></div>
+                    <h3>音樂功能</h3>
+                    <p>多種自製音樂，每天切換不同感受。</p>
+                    
+                    <!-- 懸停顯示的圖片 -->
+                    <div class="feature-preview">
+                        <img src="images/3.png" alt="音樂功能界面" loading="lazy">
+                    </div>
+                </div>
+                <div class="feature-card" data-feature="integration">
+                    <div class="icon"><i class='fas fa-baby' style='font-size:36px'></i></div>
+                    <h3>虛實整合</h3>
+                    <p>實體娃娃互動結合手機程式對話，提升小孩對話能力。</p>
+                    
+                    <!-- 懸停顯示的圖片 -->
+                    <div class="feature-preview">
+                        <img src="images/4.png" alt="虛實整合界面" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <div class="title-area">
+                    <h2>團隊介紹</h2>
+                </div>
+            </div>
+            <div class="team-grid">
+                <div class="team-member" data-name="張宏葳" data-title="專案經理" data-description="負責整體專案規劃與進度掌控。">
+                    <div class="team-member-inner">
+                        <div class="team-member-front">
+                            <img src="images/webp/profile1.webp" loading="lazy" alt="團隊成員">
+                        </div>
+                        <div class="team-member-back">
+                            <img src="images/webp/photo1.webp" loading="lazy" alt="張宏葳 - 背面">
+                            <h3>張宏葳</h3>
+                            <p>專案經理</p>
+                            <p class="description">負責整體專案規劃與進度掌控。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member" data-name="呂宗諳" data-title="美術設計" data-description="負責整體專案規劃與進度掌控。">
+                    <div class="team-member-inner">
+                        <div class="team-member-front">
+                            <img src="images/webp/profile2.webp" loading="lazy" alt="團隊成員">
+                        </div>
+                        <div class="team-member-back">
+                            <img src="images/webp/photo2.webp" loading="lazy" alt="呂宗諳 - 背面">
+                            <h3>呂宗諳</h3>
+                            <p>美術設計</p>
+                            <p class="description">負責專案相關內容之美術設計與規劃。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member" data-name="杜晉緯" data-title="行銷經理" data-description="負責整體專案規劃與進度掌控。">
+                    <div class="team-member-inner">
+                        <div class="team-member-front">
+                            <img src="images/webp/profile3.webp" loading="lazy" alt="團隊成員">
+                        </div>
+                        <div class="team-member-back">
+                            <img src="images/webp/photo3.webp" loading="lazy" alt="杜晉緯 - 背面">
+                            <h3>杜晉緯</h3>
+                            <p>行銷經理</p>
+                            <p class="description">負責對外行銷及社群經營。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member" data-name="高如萱" data-title="全端工程師" data-description="負責整體專案規劃與進度掌控。">
+                    <div class="team-member-inner">
+                        <div class="team-member-front">
+                            <img src="images/webp/profile4.webp" loading="lazy" alt="團隊成員">
+                        </div>
+                        <div class="team-member-back">
+                            <img src="images/webp/photo4.webp" loading="lazy" alt="高如萱 - 背面">
+                            <h3>高如萱</h3>
+                            <p>全端工程師</p>
+                            <p class="description">負責專案整體程式及網頁架設。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member" data-name="倪辰華" data-title="後端工程師" data-description="負責整體專案規劃與進度掌控。">
+                    <div class="team-member-inner">
+                        <div class="team-member-front">
+                            <img src="images/webp/profile5.webp" loading="lazy" alt="團隊成員">
+                        </div>
+                        <div class="team-member-back">
+                            <img src="images/webp/photo5.webp" loading="lazy" alt="倪辰華 - 背面">
+                            <h3>倪辰華</h3>
+                            <p>後端工程師</p>
+                            <p class="description">負責專案程式後端管理及程式上架。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member" data-name="陳俊廷" data-title="指導老師" data-description="負責整體專案規劃與進度掌控。">
+                    <div class="team-member-inner">
+                        <div class="team-member-front">
+                            <img src="images/webp/profile.webp" loading="lazy" alt="團隊成員">
+                        </div>
+                        <div class="team-member-back">
+                            <img src="images/webp/photo6.webp" loading="lazy" alt="陳俊廷 - 背面">
+                            <h3>陳俊廷</h3>
+                            <p>指導老師</p>
+                            <p class="description">負責指導整體專題規劃。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="title-area">
+                    <h2>團隊日常</h2>
+                </div>
+            </div>
+            <div class="contact-content">
+                <!-- 環狀幻燈片 -->
+                <div class="photo-album">
+                    <div class="album-container">
+                        <div class="album-page" data-index="0">
+                            <img src="images/IMG_1230.JPG" alt="團隊日常 1">
+                        </div>
+                        <div class="album-page" data-index="1">
+                            <img src="images/IMG_1233.JPG" alt="團隊日常 2">
+                        </div>
+                        <div class="album-page" data-index="2">
+                            <img src="images/IMG_1236.JPG" alt="團隊日常 3">
+                        </div>
+                        <div class="album-page" data-index="3">
+                            <img src="images/IMG_8136.jpg" alt="團隊日常 4">
+                        </div>
+                        <div class="album-page" data-index="4">
+                            <img src="images/IMG_8747.jpg" alt="團隊日常 5">
+                        </div>
+                        <div class="album-page" data-index="5">
+                            <img src="images/IMG_9466.jpg" alt="團隊日常 6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>世新大學111級資訊傳播學系&nbsp;畢業製作-Mamoon &copy; 2025 Mamoon 專案. 版權所有.</p>
+    </footer>
+
+    <!-- Instagram 浮動按鈕 -->
+    <div class="instagram-float">
+        <a href="https://www.instagram.com/mamoon_0223/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
